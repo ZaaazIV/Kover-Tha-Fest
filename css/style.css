@@ -11,9 +11,7 @@
 :root {
     --color-primary:#e24983;
     --color-success:  #13BDCC; 
-    --color-warning: #f7c94b;
     --color-danger: #f74b4b;
-    --color-danger-variant: rgba(247,88,66,0.4);
     --color-white:#fff;
     --color-light:rgba(255,255,255,.7);
     --color-black: #111;
@@ -331,5 +329,34 @@ footer ul li:hover{
     .footer_socials{
         justify-content: center;
     
+    }
+}
+@media screen and (max-width: 450px){
+    h2{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    /**************NAVBAR***************/
+    .nav_menu{
+        right: 3%;
+    }
+
+    /*************** HEADER *******************/
+    header{
+        height: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }   
+
+    .footer_1{
+        margin: 1rem 0rem;
+        width: auto;
     }
 }
