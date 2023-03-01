@@ -48,7 +48,8 @@
 
 @media screen and (max-width: 1024px) {
     .invitados{
-        padding-bottom: 0;
+        padding-bottom: 1rem;
+        margin: -2rem 5rem;
     }
     .invitados-container{
         grid-template-columns: 1fr;
@@ -64,6 +65,10 @@
 
 /***************MEDIA QUEARY (MOBIE)******************/
 @media screen and (max-width: 700px) {
+    .invitados{
+        padding-bottom: 1rem;
+        margin: 0rem 0rem;
+    }
 
     .invitados-container{
         grid-template-columns: 1fr;
@@ -79,6 +84,16 @@
         width: 9rem;
         height: 9rem;
         border: .5rem solid var(--color-primary);
+    }
+}
+  @media screen and (max-width: 450px){
+    .invitados h2{
+        font-size: 16px;
+    }
+    .invitado-img{
+        width: 6rem;
+        height: 6rem;
+        border: .2rem solid var(--color-primary);
     }
 }
 
