@@ -10,7 +10,7 @@
     gap :5rem;
     background: var(--color-bg1);
     border-radius: 1rem;
-    padding: 5rem;
+    padding: 3rem;
     margin-bottom: 2rem;
 }
 .categories{
@@ -23,7 +23,6 @@
     margin-top:  0rem;
     margin-bottom:  0rem;
 }
-
 .competition-img{
     width: 12rem;
     height: 12rem;
@@ -43,7 +42,7 @@
 
 /**************NOSOTROS*************/
 .about-us{
-    margin-top: -2rem 7rem;
+    margin-top: -2rem;
 }
 
 .about-us-container{
@@ -53,10 +52,7 @@
     text-align: center;
    
 }
-video{
-    width: 80% ;
-    margin-top: 2rem;
-}
+
 .about-us-img{
   width: 25rem;
   height: auto;
@@ -68,31 +64,59 @@ video{
   font-weight: bold;
   color: #8C1EA2;
 }
+iframe{
+  width: 640px;
+  height: 480px;
+  margin-top: 2rem;
+  margin-bottom: -7rem;
+}
 
 /***********************MEDIA QUERY (TABLETS)*************************/
 @media screen and (max-width: 1024px){
   .about-us{
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-bottom: 4rem;
   } 
+  iframe{
+    width: 540px;
+    height: 380px;
+    margin-top: 2rem;
+    margin-bottom: -7rem;
+  }
   .competition{
     margin: 3rem 3rem;
   }
+  .competition-container{ 
+    gap :3rem;
+    padding: 2rem;
+}
 }
 /***********************MEDIA QUERY (MOBILE)*************************/
 
 @media screen and (max-width: 700px){
     .about-us{
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
     } 
+    .about-us-img{
+      width: 18rem;
+    }
+    iframe{
+      width: 400px;
+      height: 240px;
+      margin-top: 2rem;
+      margin-bottom: -7rem;
+    }
     .competition{
         margin: 2rem 0rem;
       }
     .competition-container{
         display: grid;
         grid-template-columns: 1fr;
-        gap :0rem
+        gap :0rem;
+        padding: 1rem;
     }
     .categories{
         padding: 1rem;
@@ -102,4 +126,39 @@ video{
 
   }
 
+  @media screen and (max-width: 450px){
 
+    .about-us{
+      margin-left: 0rem;
+      margin-right: 0rem;
+    } 
+    .about-us-img{
+      width: 14rem;
+    }
+    .about-us h2{
+      font-size: 16px;
+      }
+    iframe{
+      width: 200px;
+      height: 120px;
+      margin-top: 2rem;
+      margin-bottom: -7rem;
+    }
+    .competition{
+        margin: auto 0rem;
+      }
+    .competition-container{ 
+        gap :1rem;
+        padding: 0rem;
+    }
+    .competition h2{
+      font-size: 16px;
+    }    
+    .competition-img{
+      width: 9rem;
+      height: 9rem;
+  }
+   .categories{
+    padding: 0rem;
+}
+  }
